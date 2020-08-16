@@ -7,9 +7,13 @@ export class Cliente {
 
     //Função construtora. Campos para preenchimento na hora da construção. 
     //Quando é criado uma instância de "Cliente", automaticamente gera o construtor abaixo. 
-    constructor(nome, cpf){
+    constructor(nome, cpf, senha){
         this.nome = nome;
         this._cpf = cpf;
+        this._senha = senha;
     }
 
+    autenticar() {
+        return true;
+    }
 }
